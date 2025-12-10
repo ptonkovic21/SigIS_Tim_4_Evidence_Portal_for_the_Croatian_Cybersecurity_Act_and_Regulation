@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Evidence Portal - Export</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <h1>Evidence Portal</h1>
+        <p class="subtitle">Croatian Cybersecurity Act & Regulation</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="/index" class="nav-link">Dashboard</a>
+        <a href="/catalog" class="nav-link">Catalog</a>
+        <a href="/export" class="nav-link active">Export</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Export Audit Package</h2>
+            <p>
+                Select the obligations you want to include in an audit package.
+                In a full implementation, this would trigger generation of a ZIP
+                file with evidence, a manifest and an HTML index.
+            </p>
+
+            <form>
+                <fieldset>
+                    <legend>Obligations</legend>
+
+                    <div>
+                        <label>
+                            <input type="checkbox" name="obligations" value="GOV-01" checked />
+                            GOV-01 - Management accountability for cybersecurity
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="obligations" value="RISK-01" />
+                            RISK-01 - Periodic risk assessment
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="obligations" value="INC-01" />
+                            INC-01 - Incident reporting within legal deadlines
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="obligations" value="BC-01" />
+                            BC-01 - Business continuity and disaster recovery
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="obligations" value="AWARE-01" />
+                            AWARE-01 - Awareness and training
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Package options</legend>
+                    <label>
+                        Organization name:
+                        <input type="text" name="orgName" value="Demo Organization" />
+                    </label>
+                    <label>
+                        Comment / Scope note:
+                        <textarea name="scope" rows="3"></textarea>
+                    </label>
+                </fieldset>
+
+                <button type="submit">Generate Package (placeholder)</button>
+            </form>
+
+            <h3>Example manifest structure</h3>
+            <pre class="code-block">
+{
+  "generatedAt": "2025-01-10T10:00:00Z",
+  "organization": "Demo Organization",
+  "obligations": [
+    {
+      "id": "GOV-01",
+      "title": "Management accountability for cybersecurity",
+      "evidence": [
+        {
+          "id": "EV-001",
+          "type": "DOCUMENT",
+          "title": "Cybersecurity Governance Policy",
+          "owner": "CISO",
+          "lastReviewedAt": "2024-11-10T12:00:00Z"
+        }
+      ]
+    }
+  ]
+}
+      </pre>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <small>Demo Evidence Portal</small>
+    </footer>
+</body>
+
+</html>

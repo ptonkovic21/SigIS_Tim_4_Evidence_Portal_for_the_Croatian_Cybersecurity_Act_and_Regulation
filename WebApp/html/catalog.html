@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Evidence Portal - Catalog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <h1>Evidence Portal</h1>
+        <p class="subtitle">Croatian Cybersecurity Act & Regulation</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="/dashboard" class="nav-link">Dashboard</a>
+        <a href="/catalog" class="nav-link active">Catalog</a>
+        <a href="/export" class="nav-link">Export</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Requirement Catalog</h2>
+
+            <div class="catalog-layout">
+                <aside class="sidebar">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li class="active">
+                            Governance &amp; Management
+                            <p class="muted">Management accountability, security policy, responsibilities.</p>
+                        </li>
+                        <li>
+                            Risk Management
+                            <p class="muted">Risk assessment, treatment and supplier risks.</p>
+                        </li>
+                        <li>
+                            Incident Handling
+                            <p class="muted">Incident detection, reporting and response.</p>
+                        </li>
+                        <li>
+                            Business Continuity
+                            <p class="muted">Backup, disaster recovery, resilience testing.</p>
+                        </li>
+                        <li>
+                            Awareness &amp; Training
+                            <p class="muted">Staff awareness and training.</p>
+                        </li>
+                    </ul>
+                </aside>
+
+                <section class="content">
+                    <h3>Governance &amp; Management - Obligations (examples)</h3>
+                    <ul class="obligation-list">
+                        <li>
+                            <span class="id">GOV-01</span>
+                            <a href="/obligation">Management accountability for cybersecurity</a>
+                            <span class="badge green outline" style="float:right;">Valid</span>
+                        </li>
+                        <li>
+                            <span class="id">GOV-02</span>
+                            Cybersecurity policy approval and review
+                            <span class="badge amber outline" style="float:right;">Near expiry</span>
+                        </li>
+                    </ul>
+
+                    <h3>Other Categories (static examples)</h3>
+                    <p class="muted">For a full implementation, each category would have its own obligation list.</p>
+
+                    <ul class="obligation-list">
+                        <li>
+                            <span class="id">RISK-01</span>
+                            Periodic risk assessment
+                            <span class="badge red outline" style="float:right;">Expired</span>
+                        </li>
+                        <li>
+                            <span class="id">INC-01</span>
+                            Incident reporting within legal deadlines
+                            <span class="badge green outline" style="float:right;">Valid</span>
+                        </li>
+                        <li>
+                            <span class="id">BC-01</span>
+                            Business continuity and disaster recovery
+                            <span class="badge red outline" style="float:right;">Missing</span>
+                        </li>
+                        <li>
+                            <span class="id">AWARE-01</span>
+                            Awareness and training
+                            <span class="badge green outline" style="float:right;">Valid</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <small>Demo Evidence Portal</small>
+    </footer>
+</body>
+
+</html>

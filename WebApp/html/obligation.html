@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Evidence Portal - Obligation GOV-01</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <h1>Evidence Portal</h1>
+        <p class="subtitle">Croatian Cybersecurity Act & Regulation</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="/index" class="nav-link">Dashboard</a>
+        <a href="/catalog" class="nav-link">Catalog</a>
+        <a href="/export" class="nav-link">Export</a>
+    </nav>
+
+    <main>
+        <section>
+            <a href="catalog" class="secondary-btn">&larr; Back to catalog</a>
+
+            <h2>GOV-01 - Management accountability for cybersecurity</h2>
+            <p class="muted">Legal reference: Article 5(2) - Croatian Cybersecurity Act</p>
+
+            <p>
+                Top management must approve and oversee the implementation of
+                cybersecurity measures, ensuring adequate resources, clear responsibilities
+                and regular review of the organization's security posture.
+            </p>
+
+            <p>
+                <strong>Category:</strong> Governance &amp; Management<br />
+                <strong>Review cadence:</strong> 12 months<br />
+                <strong>Mandatory:</strong> Yes
+            </p>
+
+            <hr />
+
+            <h3>Suggested Evidence (examples)</h3>
+            <ul class="suggestion-list">
+                <li>Approved cybersecurity policy signed by top management.</li>
+                <li>RACI matrix describing cybersecurity roles and responsibilities.</li>
+                <li>Meeting minutes where cybersecurity is discussed.</li>
+            </ul>
+
+            <h3>Existing Evidence (demo)</h3>
+            <ul class="evidence-list">
+                <li>
+                    <strong>[DOCUMENT]</strong> Cybersecurity Governance Policy v1.2<br />
+                    <span class="muted">Owner: CISO · Last reviewed: 10.11.2024</span>
+                </li>
+                <li>
+                    <strong>[NOTE]</strong> Management review meeting - October 2024<br />
+                    <span class="muted">Owner: Security Officer · Last reviewed: 05.10.2024</span>
+                </li>
+            </ul>
+
+            <h3>Add Evidence (static form, no JS)</h3>
+            <p class="muted">This form is a static placeholder. In the full version, it would upload files and save
+                data.</p>
+
+            <form>
+                <label>
+                    Type:
+                    <select name="type">
+                        <option>Document</option>
+                        <option>Screenshot</option>
+                        <option>Configuration snippet</option>
+                        <option>Link</option>
+                        <option>Attestation note</option>
+                    </select>
+                </label>
+
+                <label>
+                    Title:
+                    <input type="text" name="title" />
+                </label>
+
+                <label>
+                    Owner / Responsible:
+                    <input type="text" name="owner" />
+                </label>
+
+                <label>
+                    Link (optional):
+                    <input type="url" name="link" />
+                </label>
+
+                <label>
+                    Note / Description:
+                    <textarea name="note" rows="3"></textarea>
+                </label>
+
+                <label>
+                    File (for document / screenshot):
+                    <input type="file" name="file" />
+                </label>
+
+                <button type="submit">Save Evidence (placeholder)</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <small>Demo Evidence Portal</small>
+    </footer>
+</body>
+
+</html>
