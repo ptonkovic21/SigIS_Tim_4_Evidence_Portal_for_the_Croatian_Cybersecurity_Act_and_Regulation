@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
-    <title>Evidence Portal - Obligation GOV-01</title>
+    <title>Evidence Portal - Obligation</title>
     <link rel="stylesheet" href="/css/style.css" />
 </head>
-
 <body>
     <header class="topbar">
         <h1>Evidence Portal</h1>
@@ -21,86 +19,70 @@
 
     <main>
         <section>
-            <a href="catalog" class="secondary-btn">&larr; Back to catalog</a>
+            <a href="#" class="secondary-btn">&larr; Back to catalog</a>
 
-            <h2>GOV-01 - Management accountability for cybersecurity</h2>
-            <p class="muted">Legal reference: Article 5(2) - Croatian Cybersecurity Act</p>
-
-            <p>
-                Top management must approve and oversee the implementation of
-                cybersecurity measures, ensuring adequate resources, clear responsibilities
-                and regular review of the organization's security posture.
-            </p>
-
-            <p>
-                <strong>Category:</strong> Governance &amp; Management<br />
-                <strong>Review cadence:</strong> 12 months<br />
-                <strong>Mandatory:</strong> Yes
-            </p>
+            <h2>Loading...</h2>
+            <p class="muted">Legal reference: ...</p>
+            <p>...</p>
 
             <hr />
 
-            <h3>Suggested Evidence (examples)</h3>
+            <h3>Suggested Evidence</h3>
             <ul class="suggestion-list">
-                <li>Approved cybersecurity policy signed by top management.</li>
-                <li>RACI matrix describing cybersecurity roles and responsibilities.</li>
-                <li>Meeting minutes where cybersecurity is discussed.</li>
-            </ul>
+                </ul>
 
-            <h3>Existing Evidence (demo)</h3>
+            <h3>Evidence Repository</h3>
             <ul class="evidence-list">
-                <li>
-                    <strong>[DOCUMENT]</strong> Cybersecurity Governance Policy v1.2<br />
-                    <span class="muted">Owner: CISO · Last reviewed: 10.11.2024</span>
-                </li>
-                <li>
-                    <strong>[NOTE]</strong> Management review meeting - October 2024<br />
-                    <span class="muted">Owner: Security Officer · Last reviewed: 05.10.2024</span>
-                </li>
-            </ul>
+                </ul>
 
-            <h3>Add Evidence (static form, no JS)</h3>
-            <p class="muted">This form is a static placeholder. In the full version, it would upload files and save
-                data.</p>
+            <hr style="margin-top: 2rem;">
+
+            <h3>Add New Evidence</h3>
+            <p class="muted" style="margin-bottom: 1rem;">
+                Select the type of evidence and fill in the relevant fields. 
+                For <strong>Documents/Screenshots</strong> use the File upload. 
+                For <strong>Links</strong> use the URL field. 
+                For <strong>Notes/Snippets</strong> use the Description box.
+            </p>
 
             <form>
                 <label>
-                    Type:
+                    Evidence Type:
                     <select name="type">
-                        <option>Document</option>
-                        <option>Screenshot</option>
-                        <option>Configuration snippet</option>
-                        <option>Link</option>
-                        <option>Attestation note</option>
+                        <option value="Document">Document (File)</option>
+                        <option value="Screenshot">Screenshot (File)</option>
+                        <option value="Configuration snippet">Configuration Snippet (Text/File)</option>
+                        <option value="Link">Link (URL)</option>
+                        <option value="Attestation note">Attestation Note (Text)</option>
                     </select>
                 </label>
 
                 <label>
                     Title:
-                    <input type="text" name="title" />
+                    <input type="text" name="title" placeholder="e.g. Policy v1.0 or Firewall Rules" required />
                 </label>
 
                 <label>
                     Owner / Responsible:
-                    <input type="text" name="owner" />
+                    <input type="text" name="owner" placeholder="e.g. IT Admin" required />
                 </label>
 
                 <label>
-                    Link (optional):
-                    <input type="url" name="link" />
+                    Link URL (if applicable):
+                    <input type="url" name="linkUrl" placeholder="https://..." />
                 </label>
 
                 <label>
-                    Note / Description:
-                    <textarea name="note" rows="3"></textarea>
+                    Note / Description / Snippet:
+                    <textarea name="noteText" rows="4" placeholder="Paste configuration snippet or write attestation note here..."></textarea>
                 </label>
 
                 <label>
-                    File (for document / screenshot):
+                    File (Document / Screenshot):
                     <input type="file" name="file" />
                 </label>
 
-                <button type="submit">Save Evidence (placeholder)</button>
+                <button type="submit">Save Evidence</button>
             </form>
         </section>
     </main>

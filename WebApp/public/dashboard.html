@@ -21,28 +21,28 @@
 
     <main>
         <section>
-            <h2>Dashboard</h2>
+            <h2>Compliance Dashboard</h2>
 
             <div class="cards">
                 <div class="card">
                     <h3>Total Obligations</h3>
-                    <p>5</p>
+                    <p id="card-total">0</p>
                 </div>
                 <div class="card">
                     <h3>Covered Obligations</h3>
-                    <p>2</p>
+                    <p id="card-covered">0</p>
                 </div>
                 <div class="card">
-                    <h3>Freshness</h3>
-                    <p>
-                        <span class="badge green">3 Valid</span>
-                        <span class="badge amber">1 Near expiry</span>
-                        <span class="badge red">1 Expired</span>
+                    <h3>Freshness Indicators</h3>
+                    <p style="font-size: 1rem; margin-top: 10px;">
+                        <span class="badge green"><span id="count-green">0</span> Valid</span>
+                        <span class="badge amber"><span id="count-amber">0</span> Near expiry</span>
+                        <span class="badge red"><span id="count-red">0</span> Missing/Expired</span>
                     </p>
                 </div>
             </div>
 
-            <h3>Obligation Overview (static example)</h3>
+            <h3>Obligation Overview</h3>
             <table class="table">
                 <thead>
                     <tr>
@@ -50,53 +50,17 @@
                         <th>Title</th>
                         <th>Category</th>
                         <th>Coverage</th>
-                        <th>Freshness</th>
+                        <th>Status</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>GOV-01</td>
-                        <td><a href="/obligation">Management accountability for cybersecurity</a></td>
-                        <td>Governance &amp; Management</td>
-                        <td>FULL</td>
-                        <td><span class="badge green">Valid</span></td>
-                    </tr>
-                    <tr>
-                        <td>RISK-01</td>
-                        <td>Periodic risk assessment</td>
-                        <td>Risk Management</td>
-                        <td>NONE</td>
-                        <td><span class="badge red">Expired / missing</span></td>
-                    </tr>
-                    <tr>
-                        <td>INC-01</td>
-                        <td>Incident reporting within legal deadlines</td>
-                        <td>Incident Handling</td>
-                        <td>FULL</td>
-                        <td><span class="badge amber">Near expiry</span></td>
-                    </tr>
-                    <tr>
-                        <td>BC-01</td>
-                        <td>Business continuity and disaster recovery</td>
-                        <td>Business Continuity</td>
-                        <td>NONE</td>
-                        <td><span class="badge red">Expired / missing</span></td>
-                    </tr>
-                    <tr>
-                        <td>AWARE-01</td>
-                        <td>Awareness and training</td>
-                        <td>Awareness &amp; Training</td>
-                        <td>FULL</td>
-                        <td><span class="badge green">Valid</span></td>
-                    </tr>
-                </tbody>
+                <tbody></tbody>
             </table>
         </section>
     </main>
 
     <footer class="footer">
-        <small>Demo Evidence Portal</small>
+        <small>Demo Evidence Portal - Student Project</small>
     </footer>
+    <script type="module" src="/js/script.js"></script>
 </body>
-
 </html>
