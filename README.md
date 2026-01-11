@@ -1,6 +1,6 @@
 # Evidence Portal for the Croatian Cybersecurity Act and Regulation
 
-# Description
+## Description
 
 This project is a lightweight web application (HTML, CSS, JavaScript) designed to help organizations demonstrate compliance with the Croatian Cybersecurity Act and its Regulation, aligned with the EU NIS2 Directive.
 
