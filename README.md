@@ -1,39 +1,9 @@
-# Inicijalne upute za izradu zadaća
+# Evidence Portal for the Croatian Cybersecurity Act and Regulation
 
-Poštovane kolegice i kolege,
+## Description
 
-čestitamo vam jer ste uspješno kreirali **repozitorij** koji ćete koristiti za izradu vašeg projekta, tj. za pisanje vaših triju zadaća. To će uključivati izradu dokumentacije i programskog kôda.
+This project is a lightweight web application (HTML, CSS, JavaScript) designed to help organizations demonstrate compliance with the Croatian Cybersecurity Act and its Regulation, aligned with the EU NIS2 Directive.
 
-Molim vas izmijenite ovaj dokument kako biste u njemu naveli naziv i kratak opis projekta koji obrađujete u vašim zadaćama, kao i vaše osobne podatke. Za upute o sintaksi koju možete koristiti u ovom dokumentu i kod pisanja vaše projektne dokumentacije obavezno pogledajte upute o sintaksi koje su dostupne na Moodleu, a dodatno i [ovaj link](https://guides.github.com/features/mastering-markdown/).
+The application organizes legal and regulatory obligations into a structured catalog (e.g. governance, risk management, incident handling, business continuity, supply chain security, and awareness & training). For each obligation, users can attach and manage compliance evidence such as documents, screenshots, configuration snippets, links, and attestation notes.
 
-A sada, vrijeme je za prvi korak rada na vašem projektu. 🙂 Za upis/opis vašeg programskog proizvoda molimo vas koristite **predložak** koji je naveden u nastavku. Započnite tako da kliknete na _olovku_ u desnom gornjem kutu ovoga dokumenta te izbrišite sve što je iznad _Naziva projekta_, kao i sve upute koje su navedene u zagradama u predlošku ispod.
-
-# Naziv projekta
-
-(U redak iznad navedite naziv projekta koji ste dobili za analizu!)
-
-## Podaci o studentu
-
-(Ispod promijenite samo drugi redak tablice!)
-
-| Ime i prezime | E-mail adresa (FOI) | JMBAG     | Github korisničko ime |
-| ------------- | ------------------- | --------- | --------------------- |
-| Ime i prezime | mojaadresa@foi.hr   | 000000000 | githubuser            |
-
-## Opis domene
-
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
-
-## Specifikacija projekta
-
-(Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
-
-## Zadatak
-
-(U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
-
-## Resursi
-
-(Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)
-
-Svi resursi nalaze se u mapi _Documentation_.
+Key features include evidence guidance per obligation, coverage and freshness tracking with visual indicators, and export of auditor-ready packages for inspections and audits. The system is intended as an educational project, demonstrating how regulatory requirements can be translated into a practical, structured compliance support tool.
